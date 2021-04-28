@@ -1,0 +1,10 @@
+{% extends 'forms.html' %}
+
+{% block body %}
+<form action="{% url 'login' %}">
+    <input type="text" name="user_name" placeholder="User Name">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Login</button>
+</form>
+{{message}}
+{% endblock %}

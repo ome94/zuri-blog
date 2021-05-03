@@ -1,11 +1,11 @@
-{% extends 'forms.html' %}
+{% extends 'base.html' %}
 
 {% block body %}
-<form action="{% url 'register' %}" method="POST">
+<form action="{% url 'new_user' %}" method="POST">
     {% csrf_token %}
     <input type="text"name="first_name" placeholder="First Name">
     <input type="text" name="last_name" placeholder="Last Name">
-    <input type="text" name="user_name" placeholder="User Name">
+    <input type="text" name="username" placeholder="User Name">
     <input type="password" name="password" placeholder="Password">
     <button type="submit">Register</button>
 </form>

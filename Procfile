@@ -1,1 +1,1 @@
-web: gunicorn task_crud.task_crud.wsgi
+web: gunicorn task_crud.wsgi

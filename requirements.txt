@@ -1,5 +1,9 @@
 asgiref==3.3.4
-gunicorn
-Django==3.2.2
+Django==3.2.3
 pytz==2021.1
 sqlparse==0.4.1
+dj-database-url
+django-heroku
+gunicorn
+whitenoise
+psycopg2

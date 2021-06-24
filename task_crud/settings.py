@@ -28,6 +28,7 @@ DEBUG = os.getenv('DEBUG', False)
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
+    '::1',
     '127.0.0.1',
     'localhost',
     'ome-zuri-blog.herokuapp.com',
@@ -134,6 +135,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'statifiles'),
 )
 
 # Default primary key field type

@@ -28,4 +28,12 @@ class Post(models.Model):
 
 class Comment(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
     body = models.TextField()
+
+
+
+# READ ON auth.User model
+# Learn the django models ORM
+# Thus, learn to rename table fields or edit parts of the table which may contain linked data
+# That is, fields whose change in data may affect the entire table, field, or some other parts of the table.

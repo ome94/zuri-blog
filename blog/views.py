@@ -18,7 +18,7 @@ def posts(request, post_id):
     return render(request, 'post.html', {
         "user": request.user,
         "post": post,
-        "comments": Comment.objects.all(), #"""post.comments.all"""
+        "comments": post.comments.all(), #"""post.comments.all"""
     })
 
 def log_in(request):
@@ -46,6 +46,12 @@ def log_in(request):
 
 def register(request):
     return render(request, 'register.html',)
+
+# CHECKS
+# * A User instance is not created more than once.
+# * User should either be:
+#   directed to the home page or their dashboard logged in or be:
+#   directed to to the login page logged in.
 
 def create_user(request):
     if not request.method == "POST":

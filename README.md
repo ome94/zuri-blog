@@ -24,5 +24,7 @@ I had it in mind to keep working it and add features to it as much as it may nee
 I shall be working on these:
 * Break the project into components
   - Home or welcome page (about and contact may be included)
+    - By refactoring my site into components and making another migrations, I lost data(Posts & Comments) in the previous models
+    - How can I avoid losing my data whenever I have to make these sort of changes in a future time.
   - Users (including, auth, profile, etc)
-  -] Posts ()
+  - Posts ()

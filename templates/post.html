@@ -16,13 +16,16 @@
                 <p>No comments yet, be the first to <button>Comment</button></p>
             {% else %}
                 {% for comment in comments %}
-                    <p>{{ comment.body }}</p>
+                    <blockquote>{{ comment.body }}</blockquote>
+                    <!--Research this element (<cite>) and find out if there's any element close to an author in semantics-->
+                    <cite>{{ comment.author }}</cite> 
                     {% if comment.replies %}
                         {% for reply in replies %}
                             <p>{{ reply }}</p>
                         {% endfor %}
                     {% endif %}
                 {% endfor %}
+                <br> <!--Remove this if possible-->
                 <button>Comment</button>
             {% endif %}
         

@@ -19,3 +19,10 @@ It's live on [heroku](http://ome-zuri-blog.herokuapp.com).
 
 Development of this personal adventure was halted when my system got stolen,
 I had it in mind to keep working it and add features to it as much as it may need and as much as I can if necessary.
+
+# Next Time
+I shall be working on these:
+* Break the project into components
+  - Home or welcome page (about and contact may be included)
+  - Users (including, auth, profile, etc)
+  -] Posts ()

@@ -1,10 +1,30 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<h2>{{post.title}}</h2>
-<p>{{post.body}}</p>
-<!-- <div>
-    {% if user.is_authenticated %}
-
-</div> -->
+<main>
+    <h2>{{post.title}}</h2>
+    <article>
+        <p>{{post.body}}</p>
+    </article>
+    <aside>
+        <div>
+            
+            {% if not user.is_authenticated %}
+                <p><a href="{% url 'login' %}">Login</a>to view comments</p>
+            {% elif not comments %}
+                <p>No comments yet, be the first to <button>Comment</button></p>
+            {% else %}
+                {% for comment in comments %}
+                    <p>{{ comment }}</p>
+                    {% if comment.replies %}
+                        {% for reply in replies %}
+                            <p>{{ reply }}</p>
+                        {% endfor %}
+                {% endfor %}
+                <button>Comment</button>
+            {% endif %}
+        
+        </div>
+    </aside>    
+</main>
 {% endblock %}

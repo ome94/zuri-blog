@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<h2>Posts</h2>
-{% for post in posts %}
-    <h3><a href="{% url 'posts' post.pk %}">{{ post.title }}</a></h3>
-    <p>{{ post.body }}</p>
-{% endfor %}
+<main>
+    <h2>Posts</h2>
+    {% for post in posts %}
+        <h3><a href="{% url 'posts' post.pk %}">{{ post.title }}</a></h3>
+        <p>{{ post.body }}</p>
+    {% empty %}
+    There are no posts yet
+    {% endfor %}
+
+</main>
 {% endblock %}

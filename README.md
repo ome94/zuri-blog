@@ -1,5 +1,12 @@
 # Zuri Blog
-    This is my submission for the django Blog Or  Task
+This is what started as a submission for the django Blog Task.
+
+I continued work on it to acquaint myself better with the **Django** framework and also improve my skills in other aspects of development and design including:
+* Database design (*`SQL`*)
+* I'll keep improving on the UI also with *`CSS`*
+* I plan making it more accessible through the right mix of accessible *`HTML`* elements, responsive and accessible visual *`CSS`* layout and design.
+* I also intend making it a progressive web app (*`PWA`*) as development progresses.
+* That means it msy functions as a single-page web app (*`SPA`*) also.
 
 It's live on [heroku](http://ome-zuri-blog.herokuapp.com).
 
@@ -10,4 +17,5 @@ It's live on [heroku](http://ome-zuri-blog.herokuapp.com).
 
 > **email** :  _`admin@zuri.com`_
 
-I ~intend~ working on it than this but my PC got stolen and I had to borrow people's PC to make sure I submit this extent. Hoping to continue if I can get a PC to work with before the deadline.
+Development of this personal adventure was halted when my system got stolen,
+I had it in mind to keep working it and add features to it as much as it may need and as much as I can if necessary.
